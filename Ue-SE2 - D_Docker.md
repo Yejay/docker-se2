@@ -216,6 +216,7 @@ use `docker exec`.
 Execute command: `cat /tmp/hello.txt` in a third terminal:
 ```sh
 docker exec aab69035680f cat /tmp/hello.txt
+docker exec 9e06bcf0e9ca sh -c "cat /tmp/hello.txt" (In my case (Windows), because the cat command tries to find the .txt file in my personal file system)
 Hello, container!
 How are you?
 ```
