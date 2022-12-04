@@ -230,8 +230,9 @@ Explain the next command:
 - Draw a skech with the container, processes and their stdin/-out connections.
 
 ```sh
-echo "echo That\'s great to hear! >> /tmp/hello.txt" | \
-        docker exec -i aab69035680f /bin/sh
+echo "echo That\'s great to hear! >> /tmp/hello.txt" | \docker exec -i aab69035680f /bin/sh
+        
+echo "echo That\'s great to hear >> /tmp/hello.txt" | \docker exec -i 9e06bcf0e9ca sh (In my case)
 ```
 
 When all processes have exited, the container will return to the dormant state.
